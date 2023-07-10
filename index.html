@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-portfolio-2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><img src="images/logo.png" alt="logo"></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="heaader-text">
+                <p>JR. WEB Developer</p>
+                <h1>Hi, I'm <span>Marlon</span> Aragon<br> From the Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Marlon Aragon, and I am a jr. web developer.
+                        I recently Graduated in Kodego Bootcamp. I have Developed some Website During my study in
+                        Kodego, I maybe New to this
+                        kind of job but I will assure you that I will apply all of the knowledge that I have aquired
+                        from
+                        the Bootcamp.
+                        And all The things that I need to learn to be able to be a good asset to your business, I will
+                        hunt for It outside the
+                        organization.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd<br></span>Designing Developing Web/App Interfaces</li>
+                            <li><span>BackEnd<br></span>Creating server and Databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Pair-Project<br></span>Developing E-commerce website with a team</li>
+                            <li><span>Capstone<br></span>Developing Trello Clone With the team</li>
+                            <li><span>Game<br></span>Developing memory game solo project</li>
+                            <li><span>Fectching Api<br></span>Developing ChatGPT AI Using Api</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School<br></span>Leuteboro National HighSchool Socorro Oriental Mindoro</li>
+                            <li><span>BootCamp<br></span>Kodego Full stack Development Bootcamp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Development</h2>
+                    <p>Creating the visual elements of a website or application that users interact with.
+                        Utilizing technologies such as HTML, CSS, and JavaScript, to create user-friendly websites and
+                        applications.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>BackEnd Development</h2>
+                    <p>Server-side web development, utilizing node js and database technologies such mySQL and monoDB
+                    <aside></aside>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating user-friendly interfaces that are both visually appealing and functional.
+                        ablility to troubleshoot any technical issues that may arise during the development process.
+                        ablility to create beautiful websites that are both user-friendly and effective in achieving the
+                        desired goals.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/e-commerce.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Pair-Project</h3>
+                        <p>This project was done by me and my partner and batchmate miss Iris Raymondo.
+                            the Purpose is to create a website while practicing to fetch data from the dtabase.
+                        </p>
+                        <a href="https://14marlon.github.io/pair-project-api/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/memory-game.jpg" alt="">
+                    <div class="layer">
+                        <h3>Memory Game</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium, at porro quis
+                            minima exercitationem!</p>
+                        <a href="https://14marlon.github.io/memory-game/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chat-gpt.jpg" alt="">
+                    <div class="layer">
+                        <h3>ChatGPT AI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium, at porro quis
+                            minima exercitationem!</p>
+                        <a href="https://codex-puce-iota.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aragonmarlon1@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +639082883684</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/allesso.allesso.75"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/aragonmarlon1"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/aragonlhon/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.threads.net/@aragonlhon"><i class="fa-brands fa-meta"></i></a>
+                    </div>
+                    <a href="images/Marlon-Aragon-CV.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#xA9; Lhon. 2023 <i class="fa-solid fa-heart"></i> web Development Journey</p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwo90TNZAAVCIhuMrGlhj_sE6Wny5IFD5fA1P9Qqv5cm07XPdkIB9kVSAIPOgWkbjEf5A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
