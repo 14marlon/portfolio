@@ -12,6 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -139,8 +140,7 @@
                     <img src="images/memory-game.jpg" alt="">
                     <div class="layer">
                         <h3>Memory Game</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium, at porro quis
-                            minima exercitationem!</p>
+                        <p>Solo project outside the bootcamp, using html css JavaScript</p>
                         <a href="https://14marlon.github.io/memory-game/"><i
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -149,15 +149,67 @@
                     <img src="images/chat-gpt.jpg" alt="">
                     <div class="layer">
                         <h3>ChatGPT AI</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium, at porro quis
-                            minima exercitationem!</p>
+                        <p>Solo project outside the bootcamp, while exploring on how to fetch Api
+                            and how to connect to database. technologies used. Reactjs, mongoDB, and AI API.
+                        </p>
                         <a href="https://codex-puce-iota.vercel.app/"><i
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn" onclick="openModal()">See more</a>
         </div>
+    </div>
+    <!-- modal -->
+    <div class="projects-modal" id="projects">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image-generator.jpg" alt="">
+                    <div class="layer">
+                        <h3>AI Image generator</h3>
+                        <p>Solo project outside the bootcamp. Using html, css and vite.
+                            While exploring how to fetch api, connecting to database and managing security.
+                            note: this project is not live yet.
+                        </p>
+                        <a href="https://github.com/14marlon/dall-e-ai.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tic-tac-toe.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic-tac-toe</h3>
+                        <p>Pair project inside the Kodego bootcam using html, css, JavaScript and bootstrap.</p>
+                        <a href="https://kelsgaming23.github.io/tictactoe/index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chat-gpt.jpg" alt="">
+                    <div class="layer">
+                        <h3>Brollo (A trello clone)</h3>
+                        <p>Pair project with 2 batchmates, using Reactjs, bootsrap, Laravel as backend and other
+                            technologies.
+                            Note: This project is not live yet.
+                        </p>
+                        <a href="https://github.com/Sugorr/brollo.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shopping-cart.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shopping cart</h3>
+                        <p>Solo project Inside the bootcamp using html, css and bootstrap.</p>
+                        <a href="https://14marlon.github.io/shoping-cart/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- Contact -->
     <div id="contact">
@@ -235,7 +287,23 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <script>
+        let modal = document.getElementById("projects");
+        let closeButton = document.getElementsByClassName("close")[0];
 
+        function openModal() {
+            modal.style.display = "block";
+        }
+        closeButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.displa = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
